@@ -7,3 +7,6 @@ SHOP :- They can purchase computer accessories at special discount
 
 
 *****Password key used to generate apk file: 123456*****
+
+MinSDKVersion: 14
+TargetSDKVersion: 21
