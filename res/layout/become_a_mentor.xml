@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Name:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:textColor="#2811f5"
+                android:ems="10"
+                android:hint="XYZ ABC"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Per hour"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="(in Rs.) 0"
+                android:inputType="textPersonName"
+                android:textColor="#2811f5"
+                android:textAllCaps="true" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Code In:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText3"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Python, C++, Java"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textColor="#2811f5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Email:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText4"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="abc@github.com"
+                android:textColor="#2811f5"
+                android:inputType="textPersonName"
+                android:textAllCaps="true" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.82" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="#20b2aa"
+            android:padding="18dip"
+            android:text="Tell us more about Yourself:"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/becomeMentor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/aboutMySelf"
+            android:inputType="textMultiLine"
+            android:textColor="#2811f5" >
+
+        </EditText>
+
+         <Button
+             android:id="@+id/becomeMentor"
+             android:layout_width="100dp"
+             android:layout_height="35dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/mentor1"
+             android:padding="18dip"
+             android:textColor="#000"
+             android:textSize="18sp" />
+
+         <CheckBox
+             android:id="@+id/preferOnlineCoaching"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:text="Prefer Online coaching" />
+
+    </RelativeLayout>
+
+</LinearLayout>

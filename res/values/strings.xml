@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SheWho\nCodes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="become_a_mentor">Become Mentor</string>
+    <string name="find_a_mentor">Find Mentor</string>
+    <string name="post_a_project">Post Idea</string>
+    <string name="find_a_project">View Projects</string>
+    <string name="meetTechnologists">Meet Famous Technologists</string>
+    <string name="shopProducts">Shop</string>
+    <string name="postIdeaHint">Idea is that make a chrome extension such that it overrides a default New Tab of chrome. 
+        And retrieves facebook birthday and pictures using graph API.
+        next we can also use various e-commerce sites to get gifts recommendation for that birthday boy/girl using various parameters like age etc.</string>
+    <string name="aboutMySelf">I am software engineer and also member of Google Women Techmaker program. 
+        I contribute to open source projects related to Java, Javascript and python.
+        Recently I also contributed to Hackerearth\'s chrome extension, which will be online soon.
+        I like watching movies specially the black and white ones. </string>
+
+</resources>

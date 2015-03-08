@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/fullScreenPostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="My Title"
+        android:textSize="18sp"
+        android:textColor="#2811f5"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fullScreenComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fullScreenPostdescription"
+        android:text="Comments"
+        android:textColor="#2811f5"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/commentsArea"
+        android:layout_width="500dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fullScreenComments"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        android:hint="These are the latest comments posted. ! !"
+        android:scrollbars = "vertical" />
+
+
+    <Button
+        android:id="@+id/fullScreenPostComment"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/comments"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/fullScreenPostdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/thumbsUp"
+        android:text="This is the detailed description but not shown complete"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fullScreenTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fullScreenPostTitle"
+        android:text="tags will go here"
+        android:textColor="#20b2aa"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/fullScreenPlusOrMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fullScreenTags"
+        android:layout_alignBottom="@+id/fullScreenTags"
+        android:layout_alignParentLeft="true"
+        android:text="+1 -1"
+        android:textColor="#20b2aa"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/thumbsUp"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/thumbsDown"
+        android:layout_alignBottom="@+id/thumbsDown"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/fullScreenComments"
+        android:background="@drawable/thumbsup" />
+
+    <TextView
+        android:id="@+id/fullScreenUserComment"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/fullScreenPostComment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFF99"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Feel free to post your comments or rate the idea/project"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fullScreenUserComment"
+        android:layout_alignParentLeft="true"
+        android:text="What do you think ?" 
+        android:textColor="#2811f5"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/fullScreenPostComment"
+        android:text="*No spamming. ! !\n **Don&apos;t forget to click on comment"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/thumbsDown"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/fullScreenTags"
+        android:layout_toRightOf="@+id/thumbsUp"
+        android:background="@drawable/thumbsdown" />
+
+</RelativeLayout>

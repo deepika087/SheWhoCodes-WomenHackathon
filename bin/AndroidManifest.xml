@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/girl_with_computer"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".womenhackathon.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name=".womenhackathon.BecomeAMentor"
+           android:label="@string/become_a_mentor" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.BECOMEAMENTOR" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+        <activity
+           android:name=".womenhackathon.SearchAMentor"
+           android:label="@string/become_a_mentor" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.SEARCHAMENTOR" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".womenhackathon.DiscountProducts"
+           android:label="@string/shopProducts" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.DISCOUNTPRODUCTS" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".womenhackathon.FamousWomen"
+           android:label="@string/meetTechnologists" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.FAMOUSWOMEN" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".womenhackathon.PostProjectOrIdea"
+           android:label="@string/post_a_project" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.POSTPROJECTORIDEA" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".womenhackathon.ViewProjects"
+           android:label="@string/find_a_project" >
+           <intent-filter>
+               <action android:name="com.example.womenhackathon.VIEWPROJECTS" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".fullScreenHandlers.TechnologistScreen"
+           android:label="@string/meetTechnologists" >
+           <intent-filter>
+               <action android:name="com.example.fullScreenHandlers.TECHNOLOGISTSCREEN" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+       <activity
+           android:name=".fullScreenHandlers.ViewProjectsAndRate"
+           android:label="@string/find_a_project" >
+           <intent-filter>
+               <action android:name="com.example.fullScreenHandlers.VIEWPROJECTSANDRATE" />
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+       
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Skills:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Java, Python, C++"
+                android:inputType="textPersonName"
+                android:textAllCaps="true"
+                android:textColor="#2811f5" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#20b2aa"
+                android:padding="18dip"
+                android:text="Cost:"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <android.widget.EditText
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Rs. 0 to Rs. 2000 (per hour)"
+                android:inputType="textPersonName"
+                android:textColor="#2811f5" />
+
+        </TableRow>
+    </TableLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableLayout1"
+        android:text="Only online coaching" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Search Mentor" />
+
+</RelativeLayout>
